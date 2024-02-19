@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minas Café Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+</head>
+
+    <body>
+
+        <header>
+
+            <div class="nav container">
+                <a href="index.html" class="logo">Minas Café</a>
+                <div class="navbar">
+                   <a href="index.html#products" class="nav-link">Products</a>
+                   <a href="index.html#production" class="nav-link">Grains</a>
+                   <a href="index.html#team" class="nav-link">Team</a>
+                   <a href="index.html#book" class="nav-link">Reservation</a>   
+            </div>
+
+            <div class="nav-icons">
+               <a href="#"><i class='bx bxs-user-circle'></i></a>
+               <a href="#" id="cart-icon"><i class='bx bxs-shopping-bag' ></i></a>
+
+               <div class="menu-icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+               </div>
+            </div>
+            </div> 
+        </header>
+
+        <form id="user-form" onsubmit="submitForm(event)">
+            <h2>Talk to us</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea type="message" id="message" name="message" rows="4" cols="40" required></textarea>
+            </div>
+            <button type="submit">SEND</button>
+            <p id="confirmation"></p>
+        </form>
+        
+        <p class="copyright">&#169; Minas Café</p>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+        <script src="main.js"></script>
+
+    </body>
+</html>
